@@ -1,0 +1,157 @@
+body{
+    margin: auto;
+}
+
+.mydark{
+    background-color: black;
+    color: white;
+}
+
+header{
+    height:60px;
+    background-color:#e09c83
+}
+
+#toggle{
+    margin-top: 8%;
+}
+
+#msg{
+    width:450px;
+}
+
+.input-group {
+    display: table;
+    position: absolute;
+    border-collapse: separate;
+    margin-left: 25%;
+    margin-top: 0.5%;
+}
+
+.item > img{
+    height: 380px !important;
+    width:100%
+}
+
+#heading{
+    margin-left:10%;
+    margin-top:13%;
+    position: absolute;
+    color: white;
+    font-size:45px;
+}
+
+.dropdown{
+    height:60px;
+    width:60%;
+    margin-left:18%;
+    margin-top: 18.5%;
+    position: absolute;
+}
+
+select{
+    height:60px;
+    width:35%;
+    font-size:15px;
+    text-align:center;
+}
+
+#QuickSearch{
+    margin-left:1%;
+    margin-top:2%;
+}
+
+#QuickHeading{
+    color:gray;
+    font-size:30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:bold;
+    display:block;
+    margin-left: 2%;
+}
+
+#QuickSubHeading{
+    line-height: 2;
+    color:gray;
+    font-size:20px;
+    margin-left: 2%;
+}
+
+#Offers{
+    margin-left:1%;
+    margin-top:2%;
+}
+
+#OffersHeading{
+    color:gray;
+    font-size:30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:bold;
+    display:block;
+    margin-left: 2%;
+}
+
+#OffersSubHeading{
+    line-height: 2;
+    color:gray;
+    font-size:20px;
+    margin-left: 2%;
+}
+
+.tileContainer{
+    float: left;
+    margin-top: 2%;
+    margin-left: 2%;
+    box-shadow: 10px 10px 10px gray;
+}
+
+.componentHeading{
+    font-size: 25px;
+    color:gray;
+}
+
+#myslider{
+    margin-top: 2%;
+    border-radius: 10%;
+}
+
+#offerimage{
+    height: 250px;;
+}
+
+#footer{
+    margin-top: 2%;
+    background-color: black;
+}
+
+#coupon{
+    height: 250px;
+    width: 400px;
+    background-image: url(Images/Coupon.jpg);
+    z-index: 100;
+    margin: auto;
+    position: absolute;
+    margin-left: 37%;
+    margin-top: 10%;
+    visibility: hidden;
+}
+
+@media screen and (max-width:1400px){
+
+}
+
+@media screen and (max-width:1100px){
+  
+}
+
+@media screen and (max-width:1000px){
+    
+}
+
+@media screen and (max-width:800px){
+    
+}
+
+@media screen and (max-width:600px){
+    
+}

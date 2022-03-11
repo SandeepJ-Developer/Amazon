@@ -1,0 +1,362 @@
+<html>
+
+<head>
+    <title>Amazon - E Commerce</title>
+    <link href="Images/logo.png" rel="icon" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="home.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="home.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNav">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="Images/amazon.png" alt="logo" width="75px" height="35px"/>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNav">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <ul class="input-group">
+                    <span class="input-group-addon">
+                        <a href="#">
+                            <img src="Images/search.png" alt="search" width="20px" height="20px"/>
+                        </a></span>
+                    <input id="msg" type="text" class="form-control" name="msg" placeholder="Search your favourites">
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><button id="toggle" class="btn btn-dark" onClick="changeMode()">Light/Dark</button></li>
+                    <li><a href="#"><span><img src="Images/cart.png" width="25px" height="25px"/></span></a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> SignUp</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="coupon">
+        <button style="float:left" onClick="closeCoupon()">&times;</button>
+    </div>
+    <script>
+        window.onload=loadCoupon()
+    </script>
+
+    <div>
+        <div id="myslider" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myslider" data-slide-to="0" class="active"></li>
+                <li data-target="#myslider" data-slide-to="1"></li>
+                <li data-target="#myslider" data-slide-to="2"></li>
+                <li data-target="#myslider" data-slide-to="3"></li>
+                <li data-target="#myslider" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="Images/slider/slide_1.jpg" alt="a" />
+                </div>
+                <div class="item">
+                    <img src="Images/slider/slide_2.jpg" alt="a" />
+                </div>
+                <div class="item">
+                    <img src="Images/slider/slide_3.jpg" alt="a" />
+                </div>
+                <div class="item">
+                    <img src="Images/slider/slide_4.jpg" alt="a" />
+                </div>
+                <div class="item">
+                    <img src="Images/slider/slide_6.jpg" alt="a" />
+                </div>
+            </div>
+    
+            <a class="left carousel-control" href="#myslider" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#myslider" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+    </div>
+
+    <div id="QuickSearch">
+        <span id="QuickHeading">
+            Quick Search
+        </span>
+        <span id="QuickSubHeading">
+            Today's deal
+        </span>
+        <div class="row">
+            <div id="first" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="tileContainer">
+                    <div class="tileComponent1">
+                        <img src="Images/deal/1.jpg" alt="item" height="180px" width="250px" />
+                    </div>
+                    <div class="tileComponent2">
+                        <div class="componentHeading">
+                            <a href="./listing/listing.html">Latop</a>
+                        </div>
+                        <div class="componentSubHeading">
+                            Flat 10% off
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="second" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="tileContainer">
+                    <div class="tileComponent1">
+                        <img src="Images/deal/2.jpg" alt="snacks" height="180px" width="250px" />
+                    </div>
+                    <div class="tileComponent2">
+                        <div class="componentHeading">
+                            <a href="../listing/listing.html">Massage Chair</a>
+                        </div>
+                        <div class="componentSubHeading">
+                            30% discount offer end's today
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="third" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="tileContainer">
+                    <div class="tileComponent1">
+                        <img src="Images/deal/3.jpg" alt="lunch" height="180px" width="250px" />
+                    </div>
+                    <div class="tileComponent2">
+                        <div class="componentHeading">
+                            <a href="../listing/listing.html">Ear buds</a>
+                        </div>
+                        <div class="componentSubHeading">
+                            Buy with 10% off
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="fourth" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="tileContainer">
+                    <div class="tileComponent1">
+                        <img src="Images/deal/4.jpg" alt="dinner" height="180px" width="250px" />
+                    </div>
+                    <div class="tileComponent2">
+                        <div class="componentHeading">
+                            <a href="../listing/listing.html">Shoes</a>
+                        </div>
+                        <div class="componentSubHeading">
+                            45% off, end's today
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="fifth" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="tileContainer">
+                    <div class="tileComponent1">
+                        <img src="Images/deal/5.jpg" alt="delievery" height="180px" width="250px" />
+                    </div>
+                    <div class="tileComponent2">
+                        <div class="componentHeading">
+                            <a href="../listing/listing.html">Alexa</a>
+                        </div>
+                        <div class="componentSubHeading">
+                            Update your gadget, 10% off
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sixth" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="tileContainer">
+                    <div class="tileComponent1">
+                        <img src="Images/deal/6.jpg" alt="snacks" height="180px" width="250px" />
+                    </div>
+                    <div class="tileComponent2">
+                        <div class="componentHeading">
+                            <a href="../listing/listing.html">Honey, Oil & Almonds</a>
+                        </div>
+                        <div class="componentSubHeading">
+                            113.00 - 3,330 off
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sixth" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="tileContainer">
+                    <div class="tileComponent1">
+                        <img src="Images/deal/7.jpg" alt="snacks" height="180px" width="250px" />
+                    </div>
+                    <div class="tileComponent2">
+                        <div class="componentHeading">
+                            <a href="../listing/listing.html">Honey, Oil & Almonds</a>
+                        </div>
+                        <div class="componentSubHeading">
+                            113.00 - 3,330 off
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sixth" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="tileContainer">
+                    <div class="tileComponent1">
+                        <img src="Images/deal/9.jpg" alt="snacks" height="180px" width="250px" />
+                    </div>
+                    <div class="tileComponent2">
+                        <div class="componentHeading">
+                            <a href="../listing/listing.html">Honey, Oil & Almonds</a>
+                        </div>
+                        <div class="componentSubHeading">
+                            113.00 - 3,330 off
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Offers">
+        <span id="OffersHeading">
+            Offer Dhamaka
+        </span>
+        <span id="OffersSubHeading">
+            Grab your deals
+        </span>
+    </div>
+    <div>
+        <div id="myofferslider" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myofferslider" data-slide-to="0" class="active"></li>
+                <li data-target="#myofferslider" data-slide-to="2"></li>
+                <li data-target="#myofferslider" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="Images/slider/slide_12.jpeg" alt="a" />
+                </div>
+                <div class="item">
+                    <img src="Images/slider/slide_7.jpg" alt="a" />
+                </div>
+                <div class="item">
+                    <img src="Images/slider/slide_10.jpeg" alt="a" />
+                </div>
+            </div>
+    
+            <a class="left carousel-control" href="#myofferslider" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#myofferslider" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="text-center text-lg-start bg-light text-muted">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <div>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </section>
+
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <img src="Images/amazon.png" alt="logo" width="75px" height="35px"/>
+                        </h6>
+                        <p>
+                            Amazon is an American multinational technology company which focuses 
+                            on e-commerce, cloud computing, digital streaming, and 
+                            artificial intelligence. Amazon was founded by Jeff Bezos.
+                        </p>
+                    </div>
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Products
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">E-Commerce</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Cloud Computing</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Digital Streaming</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Artificial Intelligence</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Pricing</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Settings</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Orders</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Help</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Contact
+                        </h6>
+                        <p><i class="fas fa-home me-3"></i> New York, NY 19019, US</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            info@example.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> + 01 222 333 444</p>
+                        <p><i class="fas fa-print me-3"></i> + 01 222 333 444</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2022 Copyright:
+            <a class="text-reset fw-bold">Developer - Sandeep G Jadhav</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
