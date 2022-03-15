@@ -128,12 +128,30 @@ select{
     height: 250px;
     width: 400px;
     background-image: url(Images/Coupon.jpg);
+    background-repeat: no-repeat;
     z-index: 100;
     margin: auto;
     position: absolute;
     margin-left: 37%;
     margin-top: 10%;
     visibility: hidden;
+}
+
+#weatherimg{
+    margin-top: 3%;
+    width: 45px;
+    height: 45px;
+    visibility: hidden;
+}
+
+#weatherinfo{
+    font-weight: bold;
+    color:white;
+}
+
+#cityinfo{
+    font-weight: bold;
+    color:white;
 }
 
 @media screen and (max-width:1400px){
