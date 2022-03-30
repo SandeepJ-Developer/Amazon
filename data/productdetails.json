@@ -1,0 +1,137 @@
+[
+    {
+        "id": 1,
+        "product_name": "Mobile",
+        "category_id": 1,
+        "Price": 25000,
+        "Image": "",
+        "Color": "Black",
+        "Brand": "Samsung"
+    },
+    {
+        "id": 2,
+        "product_name": "Laptop",
+        "category_id": 1,
+        "Price": 85000,
+        "Image": "",
+        "Color": "Silver",
+        "Brand": "Lenovo"
+    },
+    {
+        "id": 3,
+        "product_name": "Head Phones",
+        "category_id": 1,
+        "Price": 5000,
+        "Image": "",
+        "Color": "Red",
+        "Brand": "Boat"
+    },
+    {
+        "id": 4,
+        "product_name": "Jeans",
+        "category_id": 2,
+        "Price": 7000,
+        "Image": "",
+        "Color": "Blue",
+        "Brand": "Levis"
+    },
+    {
+        "id": 5,
+        "product_name": "Jackets",
+        "category_id": 2,
+        "Price": 15000,
+        "Image": "",
+        "Color": "Brown",
+        "Brand": "Denim"
+    },
+    {
+        "id": 6,
+        "product_name": "Shirts",
+        "category_id": 2,
+        "Price": 5000,
+        "Image": "",
+        "Color": "White",
+        "Brand": "Nike"
+    },
+    {
+        "id": 7,
+        "product_name": "Rice",
+        "category_id": 3,
+        "Price": 300,
+        "Image": "",
+        "Color": "",
+        "Brand": "Basmati"
+    },
+    {
+        "id": 8,
+        "product_name": "Ghee",
+        "category_id": 3,
+        "Price": 200,
+        "Image": "",
+        "Color": "",
+        "Brand": "Nandini"
+    },
+    {
+        "id": 9,
+        "product_name": "Cooking Oil",
+        "category_id": 3,
+        "Price": 2500,
+        "Image": "",
+        "Color": "",
+        "Brand": "Fortune"
+    },
+    {
+        "id": 10,
+        "product_name": "TV",
+        "category_id": 4,
+        "Price": 72000,
+        "Image": "",
+        "Color": "Balck",
+        "Brand": "Sony Bravia"
+    },
+    {
+        "id": 11,
+        "product_name": "Refrigerator",
+        "category_id": 4,
+        "Price": 38000,
+        "Image": "",
+        "Color": "Maroon",
+        "Brand": "Godrej"
+    },
+    {
+        "id": 12,
+        "product_name": "Washing Machine",
+        "category_id": 4,
+        "Price": 22000,
+        "Image": "",
+        "Color": "Red",
+        "Brand": "Whirlpool"
+    },
+    {
+        "id": 13,
+        "product_name": "Lipsticks",
+        "category_id": 5,
+        "Price": 3000,
+        "Image": "",
+        "Color": "",
+        "Brand": "Sugar"
+    },
+    {
+        "id": 14,
+        "product_name": "Facewashs",
+        "category_id": 5,
+        "Price": 850,
+        "Image": "",
+        "Color": "",
+        "Brand": "Mama Earth"
+    },
+    {
+        "id": 15,
+        "product_name": "Perfumes",
+        "category_id": 5,
+        "Price": 12000,
+        "Image": "",
+        "Color": "",
+        "Brand": "Gucci"
+    }
+]
